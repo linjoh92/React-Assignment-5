@@ -1,0 +1,110 @@
+.contactContainer {
+  max-width: var(--max-width);
+  min-height: 70vh;
+}
+
+.contactContainer h1 {
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.formAndText {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.formText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.1rem;
+  gap: 20px;
+  line-height: 1.5em;
+  margin-top: 25px;
+}
+
+.fromContainer {
+  display: grid;
+  flex: 1;
+  gap: 20px;
+}
+
+.fromContainer input {
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid black;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+}
+
+.fromContainer input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px #d8d7cd;
+}
+
+.fromContainer input::placeholder {
+  font-size: 1rem;
+}
+
+.contactRow {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+}
+
+.contactLabel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.contactTextArea {
+  background: transparent;
+  border: 1px solid #000000;
+  font-family: Raleway;
+  font-size: 1rem;
+  height: 150px;
+  max-width: 700px;
+  outline: none;
+  padding: 10px;
+}
+
+.contactBtn {
+  background-color: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  letter-spacing: 0.03em;
+  width: 100px;
+}
+
+.contactBtn:hover {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--fourth-color);
+}
+
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    padding-top: 20px;
+  }
+
+  .contactContainer h1 {
+    text-align: center;
+  }
+
+  .formAndText {
+    flex-direction: column;
+  }
+
+  .contactTextArea {
+    max-width: none;
+  }
+}

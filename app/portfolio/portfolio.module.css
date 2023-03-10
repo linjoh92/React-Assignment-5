@@ -1,0 +1,204 @@
+.portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  min-height: 70vh;
+  width: 100%;
+}
+
+.portfolioContainer h1 {
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.portfolioContainer h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.portfolioText {
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  gap: 20px;
+  line-height: 1.5em;
+  padding: 70px 0;
+}
+
+.linkAsgmt {
+  color: var(--second-color);
+  text-decoration: underline;
+}
+
+.portfolioText a:hover {
+  color: var(--accent-color);
+}
+
+.linkAsgmtContainer {
+  color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linksAsgmt {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.linkAsgmtContainer .linkAsgmt:hover {
+  color: var(--primary-color);
+}
+
+.asgmtDate {
+  font-size: 0.8rem;
+}
+
+.assignmentContainer {
+  align-items: center;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.asgmtInfoContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+  width: 100%;
+}
+
+.asgmtInfoContainer h1 {
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.asgmtInfoAndImg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.asgmtInfoAndImg p {
+  width: 580px;
+}
+
+.asgmtImgContainer {
+  background-color: #e1e1e1;
+  border-bottom: solid 18px #000000;
+  border-radius: 10px;
+  border-top: solid 18px #000000;
+  border: solid 12px #000000;
+  font-size: 0;
+  height: 384px;
+  outline: 3px solid rgb(117, 117, 117);
+  width: 580px;
+}
+
+.linkContainer,
+.seeNowContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.linkContainer a {
+  background: var(--fourth-color);
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+.linkAsgmtContainer h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.line {
+  border-right: 2px solid var(--primary-color);
+  height: 120px;
+}
+
+.linkContainer a:hover {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .line {
+    height: 120px;
+    rotate: 90deg;
+  }
+
+  .portfolioContainer {
+    padding-top: 20px;
+  }
+
+  .seeNowContainer {
+    margin: 60px 0 0;
+  }
+
+  .portfolioContainer h1 {
+    text-align: center;
+  }
+
+  .portfolioText {
+    padding: 40px 5px;
+  }
+
+  .asgmtImgContainer {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .asgmtInfoAndImg {
+    padding: 40px 10px;
+  }
+
+  .asgmtInfoAndImg p {
+    width: 100%;
+  }
+
+  .asgmtInfoContainer {
+    width: 100%;
+  }
+
+  .linksAsgmt {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .linkAsgmtContainer {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    width: 250px;
+  }
+}

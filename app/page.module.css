@@ -1,0 +1,79 @@
+.main {
+  align-items: center;
+  background-image: url('/image/logga_background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-bottom: 80px;
+  padding: 0 60px;
+}
+
+.homePage {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: start;
+}
+
+.homePage h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.homePage p {
+  font-weight: 400px;
+  font-size: 1.2rem;
+}
+
+.notFoundContainer {
+  align-items: center;
+  display: flex;
+  min-height: 70vh;
+}
+
+.notFoundCircel {
+  align-items: center;
+  background-color: #ff9654;
+  background-image: url('/image/logga_background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  border-radius: 50%;
+  color: #ff5900;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 550px;
+  justify-content: center;
+  width: 550px;
+}
+
+.notFoundContainer a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.notFoundContainer a:hover {
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0 20px;
+  }
+
+  .homePage {
+    padding: 20px;
+  }
+
+  .homePage h1 {
+    font-size: 3.5rem;
+  }
+}

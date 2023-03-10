@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #fdfdff;
+  --second-color: #0d0d0d;
+  --third-color: #c6c5b9;
+  --fourth-color: #b5b4aa;
+  --accent-color: #62929e;
+  --body-font: var(--font-raleway);
+  --font-size: 16px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--third-color);
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-raleway);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  justify-content: center;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  flex-direction: column;
+  gap: 30px;
+  background-color: #b5b4aa;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+}
+
+.linksHeader {
+  display: flex;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+.linksHeader a:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  animation: spin 30s linear infinite;
+}
+
+.logo:hover {
+  opacity: 50%;
+}
+
+.socialMediaContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.socialMediaContainer a:hover {
+  opacity: 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+}
