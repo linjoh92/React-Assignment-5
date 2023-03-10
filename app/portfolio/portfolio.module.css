@@ -107,9 +107,11 @@
 
 .asgmtImgContainer {
   background-color: #e1e1e1;
-  border-bottom: solid 18px #000000;
+  border-bottom: solid 18px var(--second-color);
+  border-left: solid 12px var(--second-color);
   border-radius: 10px;
-  border-top: solid 18px #000000;
+  border-right: solid 12px var(--second-color);
+  border-top: solid 18px var(--second-color);
   font-size: 0;
   height: 383.5px;
   outline: 3px solid rgb(117, 117, 117);
