@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import logo from '../public/image/Logga.svg'
+import logo from '../public/image/logga.svg'
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import './globals.css'
