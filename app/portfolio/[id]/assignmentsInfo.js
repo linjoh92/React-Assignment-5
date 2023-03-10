@@ -3,7 +3,7 @@ const assignmentsInfo = {
     description:
       'The assignment was to create a three article page with some kind of pagination',
     githubLink: 'https://github.com/linjoh92/React-Assignment-1.git',
-    vercelLink: '',
+    vercelLink: 'https://react-assignment-1-one.vercel.app/',
   },
   2: {
     description:
