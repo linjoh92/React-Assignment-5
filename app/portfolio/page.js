@@ -31,7 +31,7 @@ export default function Portfolio() {
           assignments to complete. Here are the links to four of the assignments
           and the fifth you are looking at right now, my portfolio built in
           React, Next.js,{' '}
-          <Link href="https://github.com/linjoh92/React-Assignment-5">
+          <Link href="https://github.com/linjoh92/React-Assignment-5.git">
             GitHub Repository
           </Link>
         </p>

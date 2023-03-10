@@ -26,7 +26,7 @@ function LogoMotion() {
         }}
         animate={{
           rotate: isClicked ? [0, -10, 10, -10, 10, -10, 10, 0] : 0,
-          x: isClicked ? '110vh' : '0',
+          x: isClicked ? '200vh' : '0',
           y: isClicked ? '100vh' : '0',
           transition: { duration: 1.5 },
         }}
