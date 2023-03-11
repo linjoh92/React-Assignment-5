@@ -78,9 +78,13 @@
     font-size: 3.5rem;
   }
 
+  .notFoundContainer{
+    min-height: 90vh;
+  }
+
   .notFoundCircel {
-    width: 380px;
-    height: 380px;
-    background-size: 380px;
+    width: 320px;
+    height: 320px;
+    background-size: 320px;
   }
 }
