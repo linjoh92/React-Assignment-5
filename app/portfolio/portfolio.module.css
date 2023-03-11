@@ -152,8 +152,7 @@
 
 @media screen and (max-width: 600px) {
   .line {
-    height: 120px;
-    rotate: 90deg;
+    display: none;
   }
 
   .portfolioContainer {
@@ -191,6 +190,7 @@
 
   .linksAsgmt {
     flex-direction: column;
+    gap: 25px;
     padding: 0;
   }
 
@@ -198,7 +198,12 @@
     align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px 0;
-    width: 250px;
+    padding: 15px 30px;
+    background-color: var(--fourth-color);
+    border-radius: 40px;
+  }
+
+  .linkAsgmtContainer:hover .linkAsgmt{
+   color: var(--primary-color);
   }
 }

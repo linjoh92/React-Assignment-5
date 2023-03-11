@@ -77,4 +77,10 @@
   .homePage h1 {
     font-size: 3.5rem;
   }
+
+  .notFoundCircel {
+    width: 380px;
+    height: 380px;
+    background-size: 380px;
+  }
 }

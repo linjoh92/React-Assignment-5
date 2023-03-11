@@ -5,6 +5,7 @@ import LogoMotion from './logoMotion'
 import { usePathname } from 'next/navigation'
 
 const Header = () => {
+  
   const pathname = usePathname()
   const pages = [
     { name: 'About', path: '/about' },
@@ -20,7 +21,7 @@ const Header = () => {
         </Link>
         <div className="linksHeader">
           {pages.map(({path, name}) => (
-            <Link key={name} href={path} className={pathname === path ? 'activ' : ''}>
+            <Link key={name} href={path} className={pathname.substring(0, 3) === path.substring(0, 3) ? 'activ' : ''}>
               {name}
             </Link>
           ))}

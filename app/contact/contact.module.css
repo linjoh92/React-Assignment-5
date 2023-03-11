@@ -83,6 +83,7 @@
   height: 40px;
   letter-spacing: 0.03em;
   width: 100px;
+  color: var(--second-color);
 }
 
 .contactBtn:hover {
