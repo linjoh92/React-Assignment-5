@@ -81,6 +81,10 @@ footer {
   opacity: 50%;
 }
 
+.activ{
+  color: var(--accent-color);
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

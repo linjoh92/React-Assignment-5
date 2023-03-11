@@ -7,18 +7,9 @@ import { AiOutlineFacebook } from 'react-icons/ai'
 
 const Footer = () => {
   const socialMedia = [
-    {
-      link: 'https://www.linkedin.com/in/linn-johansson-50724167/',
-      icon: <AiOutlineLinkedin />,
-    },
-    {
-      link: 'https://www.facebook.com/Linnj92/',
-      icon: <AiOutlineFacebook />,
-    },
-    {
-      link: 'https://www.instagram.com/linjoh/',
-      icon: <AiOutlineInstagram />,
-    },
+    { link: 'https://www.linkedin.com/in/linn-johansson-50724167/', icon: <AiOutlineLinkedin /> },
+    { link: 'https://www.facebook.com/Linnj92/', icon: <AiOutlineFacebook /> },
+    { link: 'https://www.instagram.com/linjoh/', icon: <AiOutlineInstagram /> },
   ]
 
   return (

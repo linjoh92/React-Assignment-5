@@ -1,8 +1,17 @@
+'use client'
 import Link from 'next/link'
 import './globals.css'
 import LogoMotion from './logoMotion'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
+  const pathname = usePathname()
+  const pages = [
+    { name: 'About', path: '/about' },
+    { name: 'Portfolio', path: '/portfolio'},
+    { name: 'Contact', path: '/contact' },
+  ];
+
   return (
     <header>
       <div className="headerContainer">
@@ -10,13 +19,15 @@ const Header = () => {
           <LogoMotion />
         </Link>
         <div className="linksHeader">
-          <Link href="/about">About</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/contact">Contact</Link>
+          {pages.map(({path, name}) => (
+            <Link key={name} href={path} className={pathname === path ? 'activ' : ''}>
+              {name}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

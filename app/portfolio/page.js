@@ -4,22 +4,10 @@ import Link from 'next/link'
 
 export default function Portfolio() {
   const asgmt = [
-    {
-      number: '1',
-      date: '23.02.06',
-    },
-    {
-      number: '2',
-      date: '23.02.13',
-    },
-    {
-      number: '3',
-      date: '23.02.21',
-    },
-    {
-      number: '4',
-      date: '23.02.26',
-    },
+    { number: '1', date: '23.02.06'},
+    { number: '2', date: '23.02.13'},
+    { number: '3', date: '23.02.21'},
+    { number: '4', date: '23.02.26'},
   ]
 
   return (

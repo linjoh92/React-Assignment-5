@@ -71,6 +71,7 @@
 
   .homePage {
     padding: 20px;
+    min-height: 90vh;
   }
 
   .homePage h1 {
